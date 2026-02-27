@@ -4,6 +4,7 @@ import {
   type Locale,
   type FeatureKey,
 } from "@/lib/i18n";
+import { PhoneCarousel } from "./PhoneCarousel";
 
 const APP_STORE_URL =
   "https://apps.apple.com/app/ecardify-digital-business-card/id1619504857";
@@ -88,6 +89,13 @@ export function LandingContent({ locale }: { locale: Locale }) {
               </svg>
             </a>
           </div>
+        </div>
+      </section>
+
+      {/* App Showcase */}
+      <section aria-label="App Preview" className="px-6 py-16 sm:py-24">
+        <div className="mx-auto max-w-6xl">
+          <PhoneCarousel locale={locale} />
         </div>
       </section>
 
